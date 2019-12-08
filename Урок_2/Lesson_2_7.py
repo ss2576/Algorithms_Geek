@@ -23,7 +23,7 @@ m = n * (n + 1) // 2
 
 sum(n)
 
-lst_r = lst[::-1]
-print(lst_r)
+
+print(lst[::-1])
 print(s)
 print(m)
