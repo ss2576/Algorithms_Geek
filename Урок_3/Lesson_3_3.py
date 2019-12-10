@@ -4,11 +4,10 @@ import random
 
 L = (int(input('сколько сгенерировать чисел в строке ?: \n')))
 max_number = int(input('какая максимальная цифра в  матрице ? :\n'))
-arr = [0] * L
+arr = []
 for i in range(L):
-	arr[i] = random.randint(1, max_number)
-	print(arr[i], end=' ')
-print()
+	arr.append(random.randint(1, max_number))
+print(arr)
 
 min_ = 0
 max_ = 0
@@ -25,7 +24,4 @@ temp = arr[min_]
 arr[min_] = arr[max_]
 arr[max_] = temp
 
-print('массив после замены:')
-for i in range(L):
-	print(arr[i], end=' ')
-print()
+print('массив после замены: \n', arr)
