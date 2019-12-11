@@ -10,13 +10,13 @@ arr = []
 for i in range(h):
 	a = []
 	for j in range(l):
-		n = random.randint(1, max_number)
+		n = random.randint((max_number) / -1 ,max_number)
 		a.append(n)
 		print(n, ' ', end='')
 	arr.append(a)
 	print()
 
-max_ = -1
+max = (max_number) / -1
 for j in range(l):
 	min_ = max_number
 	for i in range(h):
